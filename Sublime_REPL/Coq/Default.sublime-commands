@@ -1,0 +1,10 @@
+[
+	{
+		"caption": "SublimeREPL: Coq",
+		"command": "run_existing_window_command", "args":
+		{
+			"id": "repl_coq",
+			"file": "config/Coq/Main.sublime-menu"
+		}
+	}
+]

@@ -1,0 +1,6 @@
+{
+	"cmd": ["E:\\Coq\\bin\\coqc.exe", "$file"],
+	"target": "exec",
+	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+	"selector": "source.coq"
+}

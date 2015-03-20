@@ -1,0 +1,32 @@
+[
+	{
+	"id": "tools",
+	"children":
+	[{
+		"caption": "SublimeREPL",
+		"mnemonic": "r",
+		"id": "SublimeREPL",
+		"children":
+		[
+			{
+				"command": "repl_open",
+				"caption": "Coq",
+				"id": "repl_coq",
+				"mnemonic": "coq",
+				"args":
+				{
+					"type": "subprocess",
+					"external_id": "coq",
+					"encoding": "utf8",
+					"cmd":
+					{
+						"windows": ["coqtop.exe"]
+					},
+					"cmd_postfix": "\n",
+					"cwd": "$file_path"
+				}
+			}
+		]
+	}]
+	}
+]
