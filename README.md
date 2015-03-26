@@ -57,3 +57,6 @@ Paste the .sublime-build file into Sublime Text 2's Pristine Package/User folder
 Restart and use with Ctrl + B
 
 
+# Current status :
+
+Solving dot(.) highlighting error.

@@ -494,6 +494,33 @@
 						</dict>
 					</array>
 				</dict>
+				<dict>
+					<key>begin</key>
+					<string>\b(Notation)\s?(\"?([a-zA-Z.\|_\[\(][a-zA-Z0-9.|_\s\[\]\;+\:\(\)\,]*)\"?\w*)</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>storage.type.function.coq</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>string.quoted.double.coq</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>(:=)</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.operator.assignment.coq</string>
+						</dict>
+					</dict>
+				</dict>
 				<!--<dict>
 					<key>begin</key>
 					<string>\b(Qed|Proof|intros|reflexivity|auto|simpl|end)\b</string>
@@ -518,7 +545,7 @@
 				</dict>-->
 				<dict>
 					<key>match</key>
-					<string>\b(Qed|Proof|intros|reflexivity|auto|simpl|end|specialize|rewrite|Abort)\b</string>
+					<string>\b(Qed|Proof|intros|reflexivity|auto|simpl|end|specialize|rewrite|Abort|induction|assert)\b</string>
 					<key>name</key>
 					<string>storage.type.function.coq</string>
 				</dict>
